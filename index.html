@@ -31,7 +31,7 @@
         <div class="banner">
             <!-- <img src="img/banner.png" alt="" width="100%" height="100%"> -->
 
-            <div class="swiper-container">
+            <div class="swiper-container swiper_container_index">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="img/banner.png" alt="">
@@ -39,26 +39,6 @@
                     <div class="swiper-slide">
                         <img src="img/banner.png" alt="">
                     </div>
-                    <!-- <div class="swiper-slide">
-                        <img src="img/banner.png" alt="" width="100%" height="100%">
-                    
-                </div>
-                <div class="swiper-slide">
-                        <img src="img/banner.png" alt="" width="100%" height="100%">
-                    
-                </div> -->
-                    <!-- <div class="swiper-slide">
-                    <div class="banner_main_img">
-                        <img src="img/left_pic.png" alt="" width="100%" height="100%">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="banner_main_img">
-                        <img src="img/left_pic.png" alt="" width="100%" height="100%">
-                    </div>
-                </div> -->
-                    <!-- Add Pagination -->
-
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -202,8 +182,8 @@
 </html>
 <script src="js/swiper.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        autoplay: true,
+    var swiper = new Swiper('.swiper_container_index', {
+        // autoplay: true,
         loop: true,
         pagination: {
             el: ".swiper-pagination"

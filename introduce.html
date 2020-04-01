@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/defineSwipe.css">
+    <link rel="stylesheet" href="css/introduce.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="top">
@@ -22,5 +24,55 @@
             <a href="news.html" >产业新闻</a>
         </nav>
     </div>
+    <section>
+        <!-- banner -->
+    <div class="banner">
+        <!-- <img src="img/banner.png" alt="" width="100%" height="100%"> -->
+
+        <div class="swiper-container swiper_container_introduce ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner_introduce.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <p class="content">
+        黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻
+        黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻<br>
+        黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻
+        黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻黑芝麻<br>
+    </p>
+    <div class="org">
+        <a href="#">陕西中医联合会<span>|</span></a>
+        <a href="#">甘肃医药政府<span>|</span></a>
+        <a href="#">兰州医科大学</a>
+    </div>
+    <div class="copyRight">
+        <p>甘肃省人民政府主办 陕西省医科大学中药系承办</p>
+        <p>版权所有:甘肃省中医药联合有限公司</p>
+        <div>
+            <img src="img/gongan.png" alt="">
+            <span>陕公网安备 61011202001187号</span>
+        </div>
+    </div>
+    </section>
 </body>
 </html>
+<script src="js/swiper.js"></script>
+<script>
+ var swiper = new Swiper('.swiper_container_introduce', {
+        // autoplay: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination"
+        },
+        // paginationClickable:true
+
+    });
+
+</script>
