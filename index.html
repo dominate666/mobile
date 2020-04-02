@@ -34,10 +34,22 @@
             <div class="swiper-container swiper_container_index">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="img/banner.png" alt="">
+                        <a href="#">
+                            <img src="img/banner.png" alt="">
+                            <span>中医药新闻111</span>
+                        </a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/banner.png" alt="">
+                        <a href="#">
+                            <img src="img/banner.png" alt="">
+                            <span>中医药新闻222</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/banner.png" alt="">
+                            <span>中医药新闻333</span>
+                        </a>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -45,7 +57,17 @@
         </div>
         <div class="notice">
             <img src="img/tell.png" alt="">
-            <a href="#"> <span>最新药品将在2020-02-30号发布于平台,请各位用户请各位用户</span></a>
+            <!-- <a href="#"> <span>最新药品将在2020-02-30号发布于平台,请各位用户请各位用户</span></a> -->
+            <div class="bd ulli">
+                <ul class="infoList">
+                    <!--今日头条的新闻，取自今日要闻栏目-->
+                    <li><a href="/art/2020/4/2/art_11125_870332.html">城关区首次采取“不见面、网上办”修复企业信用助力疫情防控</a></li>
+                    <li><a href="/art/2020/4/2/art_11125_870246.html">今年，城关区老旧住宅计划加装电梯184部，如何申请看这里</a></li>
+                    <li><a href="/art/2020/4/2/art_11125_870236.html">4月1日起，全省各林区牧区实施禁火</a></li>
+                    <li><a href="/art/2020/4/2/art_11125_870234.html">城关区设置7处临时核酸检测集中采样点</a></li>
+
+                </ul>
+            </div>
         </div>
 
         <div class="medicine">
@@ -181,9 +203,10 @@
 
 </html>
 <script src="js/swiper.js"></script>
+<script src="js/jquery.js"></script>
 <script>
     var swiper = new Swiper('.swiper_container_index', {
-        // autoplay: true,
+        autoplay: true,
         loop: true,
         pagination: {
             el: ".swiper-pagination"
@@ -191,4 +214,15 @@
         // paginationClickable:true
 
     });
+    function autoScroll(obj){  
+			$(obj).find("ul").animate({  
+				marginTop : "-0.44rem"  
+			},500,function(){  
+				$(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+			})  
+		}  
+		$(function(){  
+			setInterval('autoScroll(".ulli")',5000);
+			  
+		}) 
 </script>
