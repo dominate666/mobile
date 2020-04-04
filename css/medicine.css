@@ -5,19 +5,35 @@ body{
     display: flex;
     flex-direction: column;
 }
-.news{
-    padding: 0.15rem;
-}
-.news_read h2{
-   font-size: 0.13rem;
-}
-.news_read a{
-    overflow : hidden;
-text-overflow: ellipsis;
-display: -webkit-box;
--webkit-line-clamp: 2;
--webkit-box-orient: vertical;
-}
+
 section{
     flex:1
+}
+.medicine_main{
+    padding: 0.15rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.medicine_main .medicine_list{
+    width: 50%;
+    height: 2.05rem;
+    background: #f7f7fa
+
+}
+.medicine_main .medicine_list img{
+    width: 1.68rem;
+    height: 1.68rem;
+}
+.medicine_main .medicine_list span{
+    display:block;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #000;
+    background: #ffffff;
+}
+.medicine_main .medicine_list:nth-child(2n) img{
+    padding-left: 0.05rem;
+}
+.medicine_main .medicine_list:nth-child(2n+1) img{
+    padding-right: 0.05rem;
 }

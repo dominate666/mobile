@@ -124,7 +124,20 @@ nav a.active{
     height: 0.18rem;
     background: #1a56a8;
 }
-
+/* news */
+.news{
+    padding: 0.15rem;
+}
+.news_read h2{
+   font-size: 0.13rem;
+}
+.news_read a{
+    overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
 /* footer */
 .org{
     width: 100%;

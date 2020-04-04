@@ -10,22 +10,28 @@ section{
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.news_list{
+.indusrty_list{
     background:#f7f7fa;
 }
-.news{
+.indusrty{
     display: flex;
     margin-bottom: 0.15rem;
-    background: #ffffff;
 }
-.news_list h2{
-    font-size: 0.1rem;
-    background:rgb(244,247,247);
-    height: 0.25rem;
-    line-height: 0.25rem;
-    padding-left: 0.15rem;
+.indusrty .img_box{
+    width: 0.95rem;
+    height: 0.73rem;
+    background:lime;
+    flex-shrink: 0;
+} 
+.img_box img{
+    width: 100%;
+    height: 100%;
 }
-.news .news_read a{
+
+.indusrty .indusrty_read{
+   padding-left: 0.12rem;
+}
+.indusrty .indusrty_read a{
     display: block;
     color: #333333;
     font-size: 0.13rem;
@@ -37,19 +43,8 @@ section{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.news .news_read  span{
+.indusrty .indusrty_read  span{
     font-size: 0.06rem;
     color: #bfbfbf;
     display: block;
-}
-.news .news_read  span::before{
-    content: "";
-    display: inline-block;
-    width: 0.13rem;
-    height: 0.13rem;
-    background: url("../img/time_icon.png");
-    background-size: 100%;
-    position: relative;
-    top: 0.02rem;
-    margin-right: 0.05rem;
 }
