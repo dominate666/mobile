@@ -5,3 +5,33 @@
     color: #666666;
     padding-top: 0.2rem;
 }
+.content .list p{
+    line-height: 0.25rem;
+    font-size: 0.13rem;
+    color: #666666;
+    padding: 0 0.15rem;
+    background: #ffffff;
+}
+.honor_box{
+    padding-left: 0.15rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.honor_box_list{
+    width: 1.05rem;
+    text-align: center;
+    margin-right: 0.08rem;
+    margin-bottom: 0.08rem;
+
+}
+.honor_box_list:nth-child(3n){
+    margin-right: 0;
+}
+.honor_box_list img{
+    width: 1.05rem;
+    height: 1.38rem;
+}
+.honor_box_list span{
+    font-size: 0.13rem;
+    display: block;
+}

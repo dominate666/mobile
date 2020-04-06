@@ -16,6 +16,7 @@ section{
 .indusrty{
     display: flex;
     margin-bottom: 0.15rem;
+    border-bottom: 1px solid #e0e0e0;
 }
 .indusrty .img_box{
     width: 0.95rem;
